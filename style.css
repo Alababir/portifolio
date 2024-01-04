@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+    --bg-color: #042326;
+    --card-color: #0F5959;
+    --text-color: #8FC1B5;
+}
+
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right {
+    background-color: var(--card-color);
+    width: 50vw;
+    height: 60vh;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 8px 13px 7px rgba(0, 0, 0, 0.445);
+}
+
+.right h1 {
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: 4em;
+    margin-bottom: 40px;
+}
+
+.right p {
+    color: var(--text-color);
+    width: 35vw;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.left {
+    background-color: var(--card-color);
+    width: 50vw;
+    height: 60vh;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 7px 8px 13px 7px rgba(0, 0, 0, 0.445);
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+   
+}
