@@ -5,6 +5,7 @@
     --bg-color: rgb(6, 11, 25);
     --card-color: #0F5959;
     --text-color: #8FC1B5;
+    --border-color: rgb(255, 255, 255, 0.1);
 }
 
 
@@ -17,7 +18,30 @@ body {
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
-    height: 100vw;
+    height: 100vh;
     margin: 0px;
     overflow: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav > .secao-nav {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+}
+
+#nav-secao-de-logo,
+#nav-secao-de-link {
+    flex-basis: calc(100% / 3);
+}
+
+#nav-secao-social,
+#nav-secao-contato {
+    flex-grow: 1;
 }
