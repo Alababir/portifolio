@@ -2,7 +2,7 @@
 
 
 :root {
-    --bg-color: rgb(6, 11, 25);
+    --bg-color: #060b19;
     --card-color: #0F5959;
     --text-color: #8FC1B5;
     --border-color: rgb(255, 255, 255, 0.1);
@@ -10,9 +10,7 @@
 
 
 * {
-    font-family: 'Noto Sans', sans-serif;
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: var(--bg-color);
@@ -27,6 +25,9 @@ nav {
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
 }
 
 nav > .secao-nav {
@@ -36,12 +37,65 @@ nav > .secao-nav {
     border-left: 1px solid var(--border-color);
 }
 
+h1, h2, h3, a, p, span {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-secao-de-logo > a > svg {
+    font-size: 2.5rem;
+    
+}
+
 #nav-secao-de-logo,
 #nav-secao-de-link {
     flex-basis: calc(100% / 3);
 }
 
+#nav-secao-de-link  a {
+    border-left: 1px solid var(--border-color);
+}
+
 #nav-secao-social,
 #nav-secao-contato {
     flex-grow: 1;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main > article > .secao-do-articulo {
+    height: 100%;
+}
+
+main > article > .secao-descricao, 
+main > article > .secao-nav {
+    border-left: 1px solid var(--border-color);
+}
+
+main > article > .secao-titulo,
+main > article > .secao-nav {
+    border-top: 1px solid var(--border-color);
+}
+
+.secao-imagem {
+    background-image: url(imagens/arvore.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.secao-descricao {
+    text-indent: 20px;
 }
