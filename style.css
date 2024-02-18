@@ -16,7 +16,7 @@ body {
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 99vh;
     margin: 0px;
     overflow: hidden;
 }
@@ -30,6 +30,7 @@ nav {
     gap: 10%;
 }
 
+
 nav > .secao-nav {
     padding: 3rem 2rem;
     display: flex;
@@ -38,17 +39,21 @@ nav > .secao-nav {
 }
 
 h1, h2, h3, a, p, span {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
 a {
+    color: #2f5cd6;
     text-decoration: none;
+}
+
+#secao-de-logo {
+    margin-right: 24vw;
 }
 
 #nav-secao-de-logo > a > svg {
     font-size: 2.5rem;
-    
 }
 
 #nav-secao-de-logo,
@@ -58,6 +63,7 @@ a {
 
 #nav-secao-de-link  a {
     border-left: 1px solid var(--border-color);
+    flex-basis: calc(100%/ 1);
 }
 
 #nav-secao-social,
@@ -93,9 +99,54 @@ main > article > .secao-nav {
 .secao-imagem {
     background-image: url(imagens/arvore.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
 }
 
 .secao-descricao {
     text-indent: 20px;
+    text-align: center;
+}
+
+.secao-descricao h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.secao-descricao p {
+    padding-top: 200px;
+    margin: auto;
+    font-weight: lighter;
+    font-size: 1em;
+    text-align: justify;
+    width: 25vw;
+    height: 10vh;
+}
+
+.secao-titulo {
+    width: 700px;
+    font-size: 2.5em;
+    margin-top: -30px;
+    padding-left: 50px;
+}
+
+.secao-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.secao-nav svg {
+    width: 50%;
+    height: 60%;
+    padding: 0px 40px 0px 40px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.secao-nav svg:hover {
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    background-color: var(--text-color);
 }
