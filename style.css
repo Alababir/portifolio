@@ -44,7 +44,7 @@ h1, h2, h3, a, p, span {
 }
 
 a {
-    color: #2f5cd6;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -73,14 +73,16 @@ a {
 
 main {
     flex-grow: 1;
+    position: relative;
 }
 
-main > article {
+main > article{
     display: grid;
     height: 100%;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
 }
+
 
 main > article > .secao-do-articulo {
     height: 100%;
@@ -101,6 +103,13 @@ main > article > .secao-nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.secao-imagem-pg2 {
+    background-image: url(imagens/arvore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .secao-descricao {
@@ -124,7 +133,8 @@ main > article > .secao-nav {
 }
 
 .secao-titulo {
-    width: 700px;
+    letter-spacing: -2px;
+    width: 600px;
     font-size: 2.5em;
     margin-top: -30px;
     padding-left: 50px;
@@ -134,19 +144,24 @@ main > article > .secao-nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    align-content: center;
 }
 
 .secao-nav svg {
-    width: 50%;
-    height: 60%;
-    padding: 0px 40px 0px 40px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
     margin-bottom: 30px;
     margin-left: 50px;
-    border-radius: 20px;
+    border-radius: 50%;
+    fill: #fff;
+
+    
 }
 
 .secao-nav svg:hover {
-    transition-duration: 0.5s;
-    transition-delay: 0.1s;
-    background-color: var(--text-color);
+    /*transition-property: transform;*/
+    transition:  0.3s ease;
+    background-color: rgb(32, 32, 87);
+    fill: var(--bg-color);
 }
