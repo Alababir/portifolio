@@ -13,10 +13,14 @@
     box-sizing: border-box;
 }
 body {
-    background-color: var(--bg-color);
+    background-image: linear-gradient(45deg, 
+    var(--bg-color), 
+    #202057, 
+    var(--bg-color),
+    #202057);
     display: flex;
     flex-direction: column;
-    height: 99vh;
+    height: 100vh;
     margin: 0px;
     overflow: hidden;
 }
@@ -72,6 +76,7 @@ a {
 }
 
 main {
+    aspect-ratio: 16/9;
     flex-grow: 1;
     position: relative;
 }
@@ -160,8 +165,8 @@ main > article > .secao-nav {
 }
 
 .secao-nav svg:hover {
-    /*transition-property: transform;*/
-    transition:  0.3s ease;
-    background-color: rgb(32, 32, 87);
+    transition: transform 0.3s ease 0s;
+    background-color: #202057;
     fill: var(--bg-color);
+    transform: translateY(-10px);
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn {
+            position: absolute;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0.5em 1em;
+            background-color: lightgrey;
+            border: 10px solid black;
+            border-radius: 5px;
+
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+
+        .btn:hover {
+            transform: translateY(-20px);
+        }
+    </style>
+</head>
+<body>
+        <button class="btn">Lear More</button>
+</body>
+</html>
