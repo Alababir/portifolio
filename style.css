@@ -165,7 +165,7 @@ main > article > .secao-nav {
 }
 
 .secao-nav svg:hover {
-    transition: transform 0.3s ease 0s;
+    transition: transform 0.3s;
     background-color: #202057;
     fill: var(--bg-color);
     transform: translateY(-10px);
