@@ -2,7 +2,7 @@
 
 
 :root {
-    --bg-color: #060b19;
+    --bg-color: #012030;
     --card-color: #0F5959;
     --text-color: #8FC1B5;
     --border-color: rgb(255, 255, 255, 0.1);
@@ -15,7 +15,7 @@
 body {
     background-image: linear-gradient(45deg, 
     var(--bg-color), 
-    #202057, 
+    #024161, 
     var(--bg-color),
     #202057);
     display: flex;
@@ -104,9 +104,10 @@ main > article > .secao-nav {
 }
 
 .secao-imagem {
-    background-image: url(imagens/arvore.jpg);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+    background-image: url(imagens/projeto_login.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80% 80%;
     background-position: center center;
 }
 
