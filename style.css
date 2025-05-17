@@ -191,7 +191,7 @@ main > article > .secao-nav {
 }
 
 .secao-nav svg:hover {
-    transition:ease-in-out 0.3s;
+    transition:ease-in-out 0.2s;
     background-color: white;
     fill: #012030;
 
